@@ -1,0 +1,10 @@
+# Temporary files
+*~
+.#*
+
+# Logs
+*.log
+
+# Local overrides
+secrets.nix
+config/
