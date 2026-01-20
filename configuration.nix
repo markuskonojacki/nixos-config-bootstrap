@@ -7,9 +7,7 @@
       ./defaults.nix
       ./ssh.nix
       ./packages.nix
-      ./blocky.nix
       ./bash_aliases.nix
-      ./caddy.nix
     ];
 
   # bootloader
@@ -24,6 +22,7 @@
     isNormalUser = true;
     home = "/home/bootstrap";
     createHome = false;
+    uid = 1001;
     description = "bootstrap user";
     extraGroups = [ "networkmanager" "wheel" ];
     openssh.authorizedKeys.keys = [ 
